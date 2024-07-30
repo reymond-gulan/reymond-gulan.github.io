@@ -14,7 +14,9 @@
   --secondary-button: rgba(77, 112, 230, 0.8);
   --background-color: var(--background-color-white);
 
+  --primary: rgba(255, 87, 51, 1);
   --secondary: rgb(61, 61, 107, 1);
+  --tertiary: rgb(173, 212, 92, 1);
 }
 
 *,
@@ -75,7 +77,7 @@ img {
 
 /* NAVBAR */
 .navbar {
-  padding: 1rem 0;
+  padding: 3rem 0;
   z-index: 3;
   background-color: var(--primary-color);
 }
@@ -231,11 +233,21 @@ img {
 
 
 /* CUSTOM STYLINGS */
-.section-1 {
+.section-1, .flex-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:0 30px;
+}
+
+.title {
+    color: var(--primary);
+    text-shadow: 0 2px #000;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--primary);
+}
+
+.height-100{
+    height:100vh;
 }
 
 .section-1 img {
@@ -265,6 +277,37 @@ img {
     font-size: 40px;
 }
 
+.button {
+    background-color: var(--tertiary);
+    padding:5px 20px;
+    font-size:15px;
+    text-shadow: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border:1px solid #ffffff;
+    box-shadow: 0 5px 15px 0 rgba(62, 61, 61, 0.5);
+}
+
+/* About me section */
+#about{
+    padding:20px 100px;
+}
+
+#about img {
+    width:20%;
+    float:left;
+    margin:5px;
+    margin-right:30px;
+    text-shadow: 1px 1px var(--secondary) !important;
+    border-radius: 50%;
+}
+
+.text{
+    display: block;
+    text-align: justify !important;
+    text-indent: 3em;
+}
+
 @media (max-width: 1024px) {
     .main-intro, .main-intro .emphasize {
         font-size: 20px;
@@ -276,10 +319,11 @@ img {
         display: block;
     }
 
-    .w3-container.section-1 {
-        padding:0;
+    .w3-container.section-1, 
+    .w3-container {
+        padding:0 !important;
         text-align: center !important;
-        width:100%;
+        width:100% !important;
     }
 
     .section-1 .w3-third {
@@ -289,8 +333,36 @@ img {
         align-items: center;
     }
 
+    .main-intro {
+        padding:0 10px !important;
+    }
+
+    .section-1 img {
+        margin-top:50px !important;
+    }
+
     .main-intro, .main-intro .emphasize {
         padding:0;
         font-size:15px !important;
+    }
+
+    .navbar {
+        padding: 1rem 0;
+    }
+
+    #about{
+        padding:10px 30px;
+    }
+
+    #about img {
+        width:100%;
+        border-radius: 50% !important;
+        border:1px solid var(--secondary);
+        margin-bottom: 10px;
+    }
+
+    .title{
+        font-size: 30px;
+        line-height: 2;
     }
 }
