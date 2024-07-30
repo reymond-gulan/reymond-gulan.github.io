@@ -8,11 +8,13 @@
 
   --text-white: rgba(255, 255, 255, 1);
   --text-color: var(--text-black);
-  --primary-color: rgba(255, 3, 62, 1);
+  --primary-color: rgba(255, 87, 51, 1);
   --secondary-color: rgba(144, 12, 63, 1);
   --primary-button: rgba(255, 3, 62, 0.8);
   --secondary-button: rgba(77, 112, 230, 0.8);
   --background-color: var(--background-color-white);
+
+  --secondary: rgb(61, 61, 107, 1);
 }
 
 *,
@@ -34,6 +36,10 @@
 
 .nunito {
     font-family: "Nunito", sans-serif;
+}
+
+.calistoga {
+    font-family: "Calistoga", sans-serif;
 }
 
 html {
@@ -71,7 +77,7 @@ img {
 .navbar {
   padding: 1rem 0;
   z-index: 3;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .navbar__container {
@@ -155,6 +161,10 @@ img {
   transform: translateY(-6px) rotate(-45deg);
 }
 
+.section-1{
+    background-color: var(--primary-color);
+}
+
 /* MOBILE MENU */
 .mobile__menu {
   position: fixed;
@@ -216,5 +226,71 @@ img {
     /* MODIFIER CLASS */
     .text-align {
         text-align: left;
+    }
+}
+
+
+/* CUSTOM STYLINGS */
+.section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 30px;
+}
+
+.section-1 img {
+    width:80%;
+    float:left;
+}
+
+.main-intro {
+    padding:50px 20px 50px 150px;
+    margin: auto !important;
+    border-radius: 50px;
+    color: var(--text-white);
+    font-weight: bold;
+    text-shadow: 1px 1px #000;
+    font-size: 20px;
+}
+
+.emphasize {
+    color: var(--secondary);
+    font-weight: bolder !important;
+    text-transform: uppercase;
+    text-shadow: 0 1px #FFF;
+    line-height: 1;
+}
+
+.main-intro .emphasize {
+    font-size: 40px;
+}
+
+@media (max-width: 1024px) {
+    .main-intro, .main-intro .emphasize {
+        font-size: 20px;
+        padding:0 !important
+    }
+}
+@media (max-width: 425px) {
+    .section-1 {
+        display: block;
+    }
+
+    .w3-container.section-1 {
+        padding:0;
+        text-align: center !important;
+        width:100%;
+    }
+
+    .section-1 .w3-third {
+        width:100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-intro, .main-intro .emphasize {
+        padding:0;
+        font-size:15px !important;
     }
 }
