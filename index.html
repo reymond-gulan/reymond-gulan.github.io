@@ -12,11 +12,11 @@
 </head>
 <body>
 <!-- NAVBAR -->
-<nav class="navbar">
+<nav class="navbar" id="home">
     <div class="navbar__container container">
         <a href="#" class="navbar__logo poppins">I am a Rockstar Engineer!</a>
         <ul class="navbar__links">
-        <li class="navbar__links-item"><a href="#">Home</a></li>
+        <li class="navbar__links-item"><a href="#home">Home</a></li>
         <li class="navbar__links-item"><a href="#about">About</a></li>
         <li class="navbar__links-item"><a href="#work">Work</a></li>
         <li class="navbar__links-item"><a href="#projects">Projects</a></li>
@@ -34,7 +34,7 @@
 <aside class="mobile__menu text-align">
     <nav class="mobile__nav">
       <ul class="mobile__links">
-        <li class="mobile__links-item"><a href="#">Home</a></li>
+        <li class="mobile__links-item"><a href="#home">Home</a></li>
         <li class="mobile__links-item"><a href="#about">About</a></li>
         <li class="mobile__links-item"><a href="#experiences">Work</a></li>
         <li class="mobile__links-item">
@@ -47,14 +47,14 @@
     </nav>
 </aside>
 
+<!-- INTRODUCTION -->
 <div class="w3-container section-1">
     <div class="w3-half">
         <div class="main-intro nunito">
-            Hi, I am <span class="emphasize nunito">Reymond Gulan</span> <br />
+            <br />
+            Hi, I am <span class="emphasize uppercase nunito">Reymond Gulan</span> <br />
             a Software Engineer based in the Philippines.
-
-            <br />
-            <br />
+            <br /><br />
             <a href="#about" class="button">Read something more about me...</a>
         </div>
     </div>
@@ -64,29 +64,28 @@
 </div>
 
 <div class="height-100" id="about">
-    <div class="w3-container">
-        <h1 class="title poppins">&#60;about me /&#62;</h1>
-            <img src="images/REY.png" alt="IMAGE">
-            <span class="text">
-                Hi, I am <span class="emphasize">Reymond Gulan</span> a graduate of Bachelor of Science in Information Systems and soon to be a 
-                Master of Information Systems.
-                <p>
-                    <br />
-                    I started doing programming professionally in 2019 where I landed my first solo project for a local junior high school institution.
-                    In my <span id="total-experience"></span> years of professional experience working with local and foreign companies, with expertise in Web Development, 
-                    I have proven my skills in building robust and scalable web applications, working with APIs, creating unit testing, 
-                    and ensuring product quality, particularly using Laravel, that adheres with the industry's best practices and coding standards.
-                    <br /><br />
-                    My strengths lie in debugging complex issues, 
-                    ensuring software reliability through thorough and extensive testing, and maintaining high standards of quality 
-                    throughout the development process. My pride and passion in terms of interpersonal and professional development always drive me to learn new technologies, stay abreast of the latest trends, technologies, and best practices in the industry. 
-                    With a strong focus on problem-solving, keen eye for detail, and a commitment to continuous improvement, 
-                    I'm excited to contribute to innovative projects and take on new challenges in the world of web development.
-                </p>
-            </span>
+    <div class="w3-container about">
+        <h1 class="title poppins bold b-bottom">&#60;about me /&#62;</h1>
+        <img src="images/REY.png" alt="IMAGE">
+        <span class="text justify text-md">
+            Hi, I am <span class="emphasize uppercase">Reymond Gulan</span>, a graduate of Bachelor of Science in Information Systems and soon to be a 
+            Master of Information Systems.
+            <p>
+                <br />
+                I started doing programming professionally in 2019 where I landed my first solo project for a local junior high school institution.
+                In my <span id="total-experience"></span> years of professional experience working with local and foreign companies, with expertise in Web Development, 
+                I have proven my skills in building robust and scalable web applications, working with APIs, creating unit testing, 
+                and ensuring product quality, particularly using Laravel, that adheres with the industry's best practices and coding standards.
+                <br /><br />
+                My strengths lie in debugging complex issues, 
+                ensuring software reliability through thorough and extensive testing, and maintaining high standards of quality 
+                throughout the development process. My pride and passion in terms of interpersonal and professional development always drive me to learn new technologies, stay abreast of the latest trends, and best practices in the industry. 
+                With a strong focus on problem-solving, keen eye for detail, and a commitment to continuous improvement, 
+                I'm excited to contribute to innovative projects and take on new challenges in the world of web development.
+            </p>
+        </span>
     </div>
 </div>
-
 <script src="script.js"></script>
 </body>
 </html>
