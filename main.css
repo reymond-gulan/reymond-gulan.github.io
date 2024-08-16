@@ -504,14 +504,14 @@ img {
   border-radius: 20px;
 }
 
-.work-container header {
+.work-container .header {
   margin:10px 0;
   border-bottom:3px solid var(--primary);
   font-size:15px;
 }
 
-.work-container header span {
-  float: right;
+.work-container .header span {
+  font-size:12px !important;
 }
 
 .work-container p {
@@ -646,14 +646,17 @@ blockquote {
       width:100%;
     }
 
-    .work-container header {
+    .work-container .header {
       font-size:13px;
       display:block;
       padding-bottom: 20px;
     }
 
-    .work-container header span {
-      float:left;
+    .work-container .header span {
       font-size:11px;
+    }
+
+    .location {
+      display:none;
     }
 }
