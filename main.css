@@ -567,6 +567,10 @@ blockquote {
     #work .container {
       padding:0;
     }
+
+    .badge {
+      display:inline-block;
+    }
 }
 @media (max-width: 426px) {
     .section-1 {
@@ -616,8 +620,9 @@ blockquote {
     }
 
     .title{
-        font-size: 30px;
+        font-size: 20px;
         line-height: 2;
+        text-align: center;
     }
 
     #development-tools {
@@ -642,7 +647,7 @@ blockquote {
     }
 
     .work-container header {
-      font-size:15px;
+      font-size:13px;
       display:block;
       padding-bottom: 20px;
     }
