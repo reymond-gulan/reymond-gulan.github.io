@@ -554,11 +554,11 @@ footer ul li a {
   font-weight: bold;
 }
 
-footer ul li a:hover {
+#footer-links ul li a:hover {
   color: var(--text-white);
 }
 
-footer a:after {
+#footer-links a:after {
   display:block;
   content: '';
   border-bottom: solid 3px var(--primary);  
@@ -566,15 +566,15 @@ footer a:after {
   transition: transform 250ms ease-in-out;
 }
 
-footer a:hover:after { 
+#footer-links a:hover:after { 
   transform: scaleX(1); 
 }
 
-footer a.fromRight:after { 
+#footer-links a.fromRight:after { 
   transform-origin:100% 50%; 
 }
 
-footer a.fromLeft:after {
+#footer-links a.fromLeft:after {
   transform-origin:  0% 50%;
 }
 
