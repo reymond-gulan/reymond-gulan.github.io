@@ -424,7 +424,7 @@ img {
 }
 
 .main-intro {
-    padding:0 20px 50px 50;
+    padding:0 20px 30px 0;
     margin: auto !important;
     margin-top:0;
     border-radius: 50px;
@@ -446,7 +446,7 @@ img {
 }
 
 .main-intro .emphasize {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .button {
@@ -487,13 +487,15 @@ img {
 }
 
 #testimonials {
-  background: var(--primary);
+  background: var(--secondary);
 }
 
 .testimonials-container {
   padding:20px;
   background: var(--background-color-white);
   border-radius: 10px;
+  min-height: 80vh;
+  border-top:5px solid var(--tertiary) !important;
 }
 
 /* Work section */
@@ -502,6 +504,8 @@ img {
   padding:10px 20px;
   margin:10px 0;
   border-radius: 20px;
+  background: #fffbfb;
+  box-shadow: 0 5px 15px 0 #aaa;
 }
 
 .work-container .header {
@@ -520,6 +524,58 @@ img {
 
 blockquote {
   font-size:12px;
+}
+
+/* Footer section */
+footer {
+  margin-top: 100px;
+  margin:0;
+  padding:0;
+  width: 100%;
+  min-height:50%;
+  background: var(--tertiary);
+  padding-top:15px;
+}
+
+footer img {
+  width:50px;
+  float:left;
+}
+footer #gmail {
+  margin:35px;
+}
+
+footer ul li {
+  display: flex;
+  padding:10px 0;
+}
+footer ul li a {
+  color: var(--text-black);
+  font-weight: bold;
+}
+
+footer ul li a:hover {
+  color: var(--text-white);
+}
+
+footer a:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px var(--primary);  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+footer a:hover:after { 
+  transform: scaleX(1); 
+}
+
+footer a.fromRight:after { 
+  transform-origin:100% 50%; 
+}
+
+footer a.fromLeft:after {
+  transform-origin:  0% 50%;
 }
 
 @media (max-width: 1023px) {
@@ -570,6 +626,13 @@ blockquote {
 
     .badge {
       display:inline-block;
+    }
+
+    #testimonials .w3-third {
+      width:100%;
+    }
+    .testimonials-container {
+      min-height: auto;
     }
 }
 @media (max-width: 426px) {
@@ -658,5 +721,15 @@ blockquote {
 
     .location {
       display:none;
+    }
+    footer {
+      height: auto !important;
+    }
+    footer .w3-half {
+      position: relative;
+    }
+    footer ul li{
+      display: flex;
+      padding:2px 0;
     }
 }
