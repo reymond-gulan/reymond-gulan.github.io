@@ -11,16 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Calistoga&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="scroll-progress"></div>
 <!-- NAVBAR -->
 <nav class="navbar" id="home">
     <div class="navbar__container container">
         <a href="#" class="navbar__logo poppins">I am a Rockstar Engineer!</a>
         <ul class="navbar__links">
         <li class="navbar__links-item"><a href="#home">Home</a></li>
-        <li class="navbar__links-item"><a href="#about">About</a></li>
         <li class="navbar__links-item"><a href="#testimonials">Testimonials</a></li>
         <li class="navbar__links-item"><a href="#work">Work</a></li>
-        <li class="navbar__links-item"><a href="#projects">Projects</a></li>
+        <li class="navbar__links-item"><a href="#about">About</a></li>
         <li class="navbar__links-item"><a href="#contact">Contact</a></li>
         </ul>
         <div class="navbar__hamburger" onclick="toggleMenu()">
@@ -36,15 +36,10 @@
     <nav class="mobile__nav">
       <ul class="mobile__links">
         <li class="mobile__links-item"><a href="#home">Home</a></li>
-        <li class="mobile__links-item"><a href="#about">About</a></li>
         <li class="mobile__links-item"><a href="#testimonials">Testimonials</a></li>
         <li class="mobile__links-item"><a href="#experiences">Work</a></li>
-        <li class="mobile__links-item">
-          <a href="#projects">Projects</a>
-        </li>
-        <li class="mobile__links-item">
-          <a href="#contact">Contact</a>
-        </li>
+        <li class="mobile__links-item"><a href="#about">About</a></li>
+        <li class="mobile__links-item"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 </aside>
@@ -84,45 +79,11 @@
 </div>
 <!-- INTRODUCTION -->
 
-<!-- ABOUT ME -->
-<div class="height-100 flex-box" id="about">
-    <div class="w3-container about">
-        <h1 class="title poppins bold b-bottom">&#60;about&nbsp;me /&#62;</h1>
-        <img src="images/REY.png" alt="IMAGE">
-        <span class="text justify text-md">
-            Hi, I am <span class="emphasize uppercase">Reymond Gulan</span>, a graduate of 
-            Bachelor of Science in Information Systems and soon to be a 
-            Master of Information Systems.
-            <p>
-                <br />
-                I started doing programming professionally in 2018 where I landed my first 
-                solo project for a local junior high school institution.
-                In my almost <span id="total-experience"></span> years of commercial experience 
-                working with local and foreign companies, with expertise in Web Development, 
-                I have proven my skills in building robust and scalable web applications, 
-                working with APIs, creating unit testing, 
-                and ensuring product quality, particularly using Laravel, that adheres 
-                with the industry's best practices and coding standards.
-                <br /><br />
-                My strengths lie in debugging complex issues, 
-                ensuring software reliability through thorough and extensive testing, 
-                and maintaining high standards of quality 
-                throughout the development process. My pride and passion in terms of 
-                interpersonal and professional development always drive me to learn new 
-                technologies, stay abreast of the latest trends, and best practices in the industry. 
-                With a strong focus on problem-solving, keen eye for detail, and a commitment to continuous improvement, 
-                I'm excited to contribute to innovative projects and take on new challenges in the world of web development.
-            </p>
-        </span>
-    </div>
-</div>
-<!-- ABOUT ME -->
-
 <!-- TESTIMONIALS -->
 <div class="height-100 flex-box" id="testimonials">
   <div class="w3-container">
     <h1 class="nunito">
-      <b class="text-white">their thoughts on how I work...</b>
+      <b>their thoughts on how I work...</b>
     </h1>
     <div class="w3-third">
       <div class="testimonials-container text-xs">
@@ -206,6 +167,13 @@
         <b>Full Stack Software Developer</b> at Global Treats GmbH - Wutöschingen, Germany
         <br />
         <span><b>July 2023 – Present</b></span>
+        <p class="sites">
+          <b>Websites: </b>
+          <a id="site" href="https://vernaschediewelt.com" target="_blank">Vernasche Die Welt</a>
+          <a id="site" href="https://snackpilot.com" target="_blank">SnackPilot</a>
+          <a id="site" href="https://europecrate.com" target="_blank">EuropeCrate</a>
+          <a id="site" href="https://mycrokys.com" target="_blank">MyCrokys</a>
+        </p>
       </p>
       <blockquote>
         <p>
@@ -237,6 +205,10 @@
     <div class="work-container">
       <p class="header">
         <b>Software Engineer</b> at Alpha Sprout - North Carolina, USA <br /><span><b>Aug. 2021 – Apr. 2023 (1 year &amp; 8 months)</b></span>
+        <p class="sites">
+          <b>Company Website: </b>
+          <a id="site" href="https://getbreakthrough.com" target="_blank">Breakthrough</a>
+        </p>
       </p>
       <blockquote>
         <p>
@@ -284,6 +256,39 @@
 </div>
 <!-- WORK -->
 
+<!-- ABOUT ME -->
+<div class="height-100 flex-box" id="about">
+  <div class="w3-container about">
+      <h1 class="title poppins bold b-bottom">&#60;about&nbsp;me /&#62;</h1>
+      <img src="images/REY.png" alt="IMAGE">
+      <span class="text justify text-md">
+          Hi, I am <span class="emphasize uppercase">Reymond Gulan</span>, a graduate of 
+          Bachelor of Science in Information Systems and soon to be a 
+          Master of Information Systems.
+          <p>
+              <br />
+              I started doing programming professionally in 2018 where I landed my first 
+              solo project for a local junior high school institution.
+              In my almost <span id="total-experience"></span> years of commercial experience 
+              working with local and foreign companies, with expertise in Web Development, 
+              I have proven my skills in building robust and scalable web applications, 
+              working with APIs, creating unit testing, 
+              and ensuring product quality, particularly using Laravel, that adheres 
+              with the industry's best practices and coding standards.
+              <br /><br />
+              My strengths lie in debugging complex issues, 
+              ensuring software reliability through thorough and extensive testing, 
+              and maintaining high standards of quality 
+              throughout the development process. My pride and passion in terms of 
+              interpersonal and professional development always drive me to learn new 
+              technologies, stay abreast of the latest trends, and best practices in the industry. 
+              With a strong focus on problem-solving, keen eye for detail, and a commitment to continuous improvement, 
+              I'm excited to contribute to innovative projects and take on new challenges in the world of web development.
+          </p>
+      </span>
+  </div>
+</div>
+<!-- ABOUT ME -->
 
 <!-- FOOTER -->
 <footer class="flex-box" id="contact">
