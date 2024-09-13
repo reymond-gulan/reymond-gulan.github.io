@@ -58,16 +58,16 @@ let globalContent = alphaContent = rsdContent = "";
 
 const tools = {
   global: {
-    tools: ['Laravel 9', 'HTML', 'CSS', 'Bootstrap', 'TailwindCSS', 'Javascript', 'jQuery', 'VueJS', 'React', 'MongoDB', 'Postman', 'GitHub', 'BitBucket'],
+    tools: ['Laravel 9', 'TailwindCSS', 'Alpine.js', 'jQuery', 'VueJS', 'Liquid', 'Livewire', 'MongoDB', 'Postman', 'GitHub', 'BitBucket'],
     api: ['Shopify', 'Recharge Payments', 'Everstox', 'Brevo', 'Vimeo', 'MailTrap']
   },
   alpha: {
-    tools: ['Laravel 8', 'HTML', 'CSS','Bootstrap', 'Javascript', 'jQuery', 'VueJS', 'MySQL', 
+    tools: ['Laravel 8', 'jQuery', 'VueJS', 'MySQL', 
       'Laravel Homestead', 'Laravel Horizon', 'Laravel Forge', 'Laravel Echo', 'GitHub'],
     api: ['Twilio', 'MailGun', 'MailTrap']
   },
   rsd: {
-    tools: ['Laravel 7', 'HTML', 'CSS', 'Bootstrap', 'Javascript', 'jQuery', 'MySQL'],
+    tools: ['Laravel 7', 'Bootstrap', 'jQuery', 'MySQL'],
     api: []
   }
 };
